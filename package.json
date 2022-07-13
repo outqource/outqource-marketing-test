@@ -1,0 +1,28 @@
+{
+  "name": "ga",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "private": false,
+  "author": {
+    "email": "contact@alpox.dev",
+    "name": "AlpoxDev"
+  },
+  "scripts": {
+    "test": "ts-node public/live-server.ts",
+    "start": "build/index.js",
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/live-server": "^1.2.1",
+    "@types/node": "^18.0.3",
+    "live-server": "^1.2.2",
+    "nodemon": "^2.0.19",
+    "rollup": "^2.76.0",
+    "rollup-plugin-tslint": "^0.2.2",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "rollup-plugin-uglify": "^6.0.4",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  }
+}
