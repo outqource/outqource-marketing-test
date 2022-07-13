@@ -2,7 +2,7 @@ window.onmousedown = (event) => {
   // console.log(`event`, event);
 
   const pathname = window.location.pathname;
-  console.log(`pathname`, pathname);
+  console.log(`pathname`, decodeURI(pathname));
 
   const targets = event.path;
   // console.log(`targets`, targets);
@@ -31,7 +31,7 @@ window.onmouseover = (event) => {
   // console.log(`event`, event);
 
   const pathname = window.location.pathname;
-  console.log(`pathname`, pathname);
+  console.log(`pathname`, decodeURI(pathname));
 
   const targets = event.path;
   // console.log(`targets`, targets);
